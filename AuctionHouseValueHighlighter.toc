@@ -2,7 +2,7 @@
 ## Title: Auction House Value Highlighter Classic
 ## Notes: Highlights auction items that sell below vendor price (Classic 1.12)
 ## Author: YourName
-## Version: 1.0.0
+## Version: 1.0.1
 ## SavedVariables: AHVHSettings
 
 AuctionHouseValueHighlighter.lua
