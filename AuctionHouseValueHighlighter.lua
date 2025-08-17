@@ -296,10 +296,12 @@ end
 
 -- Event handling for Classic
 function AHVH:OnEvent()
-    if event == 'ADDON_LOADED' and arg1 == 'AuctionHouseValueHighlighter' then
-        AHVH:InitializeSettings()
-        AHVH:HookAuctionHouse()
-        AHVH:Print("Classic loaded! Use '/ahvh help' for commands.")
+    if event == 'ADDON_LOADED' then
+        if arg1 == 'AuctionHouseValueHighlighter' then
+            AHVH:InitializeSettings()
+            AHVH:HookAuctionHouse()
+            AHVH:Print("Classic loaded! Use '/ahvh help' for commands.")
+        end
     elseif event == 'VARIABLES_LOADED' then
         AHVH:InitializeSettings()
     end
